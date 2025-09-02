@@ -38,4 +38,4 @@ jobs:
         run: |
           git add images/breakout-light.svg images/breakout-dark.svg
           git commit -m "chore: update breakout SVGs" || echo "No changes to commit"
-          git push https://x-access-token:${GH_TOKEN}@github.c_
+          git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git HEAD:master
